@@ -5,3 +5,23 @@ down:
 	docker stop nest-app
 stop:
 	docker stop $(docker container ls)
+
+delimg:
+	docker rmi $(docker images ls -aq)
+ls:
+	@echo containers
+	@docker container ls
+	@echo images:
+	@docker image ls
+
+img-show:
+	@docker images
+con-show:
+	@docker ps -a
+vol-show:
+	@docker volume ls
+net-show:
+	@docker network ls
+
+prune:
+	@docker system prune -a
