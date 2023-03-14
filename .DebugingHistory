@@ -1,0 +1,3 @@
+### image does not building in wsl ubuntu
+##  script not execute at the building time
+[FIXED] : https://askubuntu.com/questions/304999/not-able-to-execute-a-sh-file-bin-bashm-bad-interpreter
