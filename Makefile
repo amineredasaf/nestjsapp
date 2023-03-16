@@ -1,8 +1,9 @@
 up:
-	docker build -t nest-app .
-	docker run -p 2222:22 -it nest-app
+	# docker-compose up
+	# # docker build -t nest-app .
+	docker run -p 2222:22 -it nest-container
 down:
-	docker stop nest-app
+	docker stop nest-container
 stop:
 	docker stop $(docker container ls)
 

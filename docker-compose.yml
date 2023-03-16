@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nestapp:
+    image: nest-image
+    container_name: nest-container
+    build: .
+    ports:
+      - "2222:22"
+    volumes:
+      - /mnt/c/Users/LENOVO/Desktop/code/nestjs/bind-dir:/apps
+    
